@@ -18,7 +18,9 @@ public class Person {
     }
 
     public PersonBuilder newChildBuilder() {
-        return new PersonBuilder();
+        return new PersonBuilder()
+                .setCity(city)
+                .setSurname(surname);
     }
 
     @Override

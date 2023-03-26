@@ -5,9 +5,6 @@ public class PersonBuilder {
     private int age;
 
     public Person build() {
-        if (surname == null && city == null && name != null) {
-            return new Person(name);
-        }
         if (age < 0) {
             throw new IllegalArgumentException("Некорректный возраст");
         }
